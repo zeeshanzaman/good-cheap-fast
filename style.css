@@ -31,6 +31,7 @@ body {
     margin: 0 15px 0;
     width: 80px;
     height: 40px;
+    position: relative;
 }
 
 .toggle:checked+.label {
@@ -38,9 +39,9 @@ body {
 }
 
 .ball {
-    background-color: #fff;
-    height: 34px;
-    width: 34px;
+    background-color: #fff !important;
+    height: 34px !important;
+    width: 34px !important;
     border-radius: 50%;
     position: absolute;
     top: 3px;
