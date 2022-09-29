@@ -4,3 +4,19 @@ const cheap = document.querySelectorAll('#cheap')
 const fast = document.querySelectorAll('#fast')
 
 toggles.forEach(toggle => toggle.addEventListener('change', (e) => doTheTrick(e.target)))
+
+function doTheTick(theClickedOne) {
+    if (good.checked && cheap.checked && fast.checked) {
+        if (good === theClickedOne) {
+            fast.checked = false
+        }
+
+        if (cheap === theClickedOne) {
+            cheap.clicked = false
+        }
+
+        if (fast === theClickedOne) {
+            cheap.checked = false
+        }
+    }
+}
